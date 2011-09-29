@@ -17,7 +17,7 @@ $.stubble = function (template, valueMap) {
 
     function escapeRegex (s) {
         s = String(s === null ? "" : s);
-        return s.replace(/&(?!\w+;)|["'<>\\]/g, function(s) {
+        return s.replace(/&(?!\w+;)|["'<>]/g, function(s) {
             switch(s) {
                 case "&":
                     return "&amp;";
